@@ -1,0 +1,10 @@
+<p>
+	<%= @player.nickname %> <br />
+	rank: <%= @player.rank %><br />
+	charisma: <%= @player.charisma %><br />
+</p>
+
+<p>
+	<%= link_to 'Edit', edit_player_path(@player.id) %><br />
+	<%= link_to 'Destroy',player_path(@player.id), method: :delete %>
+</p>

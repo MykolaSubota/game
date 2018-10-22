@@ -1,0 +1,7 @@
+<%= form_for @player, url: player_path  do |f| %>
+   <%= f.text_field :nickname %><br>
+  <%= f.text_field :rank %><br>
+  <%= f.text_field :charisma %><br>
+  <%=f.text_field :wisdom %>
+  <%= f.submit "Create" %>
+<% end %>
